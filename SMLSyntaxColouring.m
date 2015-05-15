@@ -1903,7 +1903,9 @@ NSString *SMLSyntaxDefinitionIncludeInKeywordEndCharacterSet = @"includeInKeywor
 {
 	id delegate = [document valueForKey:MGSFODelegate]; 
 	if (delegate && [delegate respondsToSelector:selector]) {
-		[delegate performSelector:selector withObject:object];
+		IMP imp = [delegate methodForSelector:selector];
+		void (*func)(id, SEL, id) = (void *)imp;
+		func(delegate, selector, object);
 	}
 }
 
