@@ -12,7 +12,7 @@
 @class MGSFragaria;
 
 @interface FragariaAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
+    NSWindow *__unsafe_unretained window;
 	IBOutlet NSView *editView;
 	MGSFragaria *fragaria;
 	BOOL isEdited;
@@ -21,7 +21,7 @@
 - (IBAction)showPreferencesWindow:(id)sender;
 - (IBAction)copyToPasteBoard:(id)sender;
 - (IBAction)reloadString:(id)sender;
-@property (assign) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 
 - (void)setSyntaxDefinition:(NSString *)name;
 - (NSString *)syntaxDefinition;
