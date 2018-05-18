@@ -82,8 +82,8 @@
 		ABCA4DA616137FC000E4849B /* DBPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1D5D5160B0801008769EB /* DBPrefsWindowController.m */; };
 		ABCA4DA816137FC000E4849B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		ABCA4DA916137FC000E4849B /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB69B62B118B745700903D1D /* MGSFragaria.framework */; };
-		ABCA4DAB16137FC000E4849B /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB69B62B118B745700903D1D /* MGSFragaria.framework */; };
-		ABD0FDB01193281600E6AFE6 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB69B62B118B745700903D1D /* MGSFragaria.framework */; };
+		ABCA4DAB16137FC000E4849B /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB69B62B118B745700903D1D /* MGSFragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		ABD0FDB01193281600E6AFE6 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB69B62B118B745700903D1D /* MGSFragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		ABE25D0A1635CA7C00F23718 /* MGSFragariaPrefsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE25D081635CA7C00F23718 /* MGSFragariaPrefsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABE25D0B1635CA7C00F23718 /* MGSFragariaPrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE25D091635CA7C00F23718 /* MGSFragariaPrefsViewController.m */; };
 		ABF28AF014C075D400ECAD48 /* NSScanner+Fragaria.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF28AEE14C075D400ECAD48 /* NSScanner+Fragaria.m */; };
@@ -377,6 +377,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				62FEAB8120AE81DD0088AF17 /* Recovered References */,
 			);
 			name = KosmicEditor;
 			sourceTree = "<group>";
@@ -417,6 +418,14 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62FEAB8120AE81DD0088AF17 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				AB6C87621610EAC800488AF2 /* General.png */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		AB3972FC118C2A5D00AEF388 /* Resources */ = {
@@ -740,7 +749,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fragaria" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -950,6 +959,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -965,6 +975,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Fragaria Doc";
 			};
 			name = Debug;
@@ -973,6 +984,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -987,6 +999,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Fragaria Doc";
 			};
 			name = Release;
@@ -1016,6 +1029,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MGSFragaria;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1045,6 +1059,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MGSFragaria;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1064,6 +1079,7 @@
 				GCC_PREFIX_HEADER = Fragaria_Prefix.pch;
 				INFOPLIST_FILE = "Fragaria copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Fragaria;
 			};
 			name = Debug;
@@ -1080,6 +1096,7 @@
 				GCC_PREFIX_HEADER = Fragaria_Prefix.pch;
 				INFOPLIST_FILE = "Fragaria copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Fragaria;
 			};
 			name = Release;
@@ -1088,6 +1105,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1096,6 +1114,7 @@
 				GCC_PREFIX_HEADER = Fragaria_Prefix.pch;
 				INFOPLIST_FILE = "Fragaria-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Fragaria GC";
 			};
 			name = Debug;
@@ -1104,12 +1123,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Fragaria_Prefix.pch;
 				INFOPLIST_FILE = "Fragaria-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mugginsoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Fragaria GC";
 			};
 			name = Release;
@@ -1118,8 +1139,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1140,7 +1182,7 @@
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "icu/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx;
@@ -1157,8 +1199,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
@@ -1178,7 +1240,7 @@
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "icu/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 				WARNING_CFLAGS = (
