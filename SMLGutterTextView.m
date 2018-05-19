@@ -57,7 +57,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 		[self setAutoresizingMask:NSViewHeightSizable];
 		
         // TODO:
-        if (NO) {
+        if ((NO)) {
             /* vlidholt/fragaria adopts this approach to try and improve line number accuracy.
              
               Not sure if this the answer to the EOF line number alignment issue.
